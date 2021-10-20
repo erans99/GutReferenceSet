@@ -20,9 +20,6 @@ if __name__ == '__main__':
         if not os.path.exists(os.path.join(phy_path, "output.tsv")):
             os.environ["PATH"] += os.pathsep + os.path.dirname(mash_exe)
 
-            com = "ln -s  %s/phylophlan_ ." % phylophlan_path
-            os.system(com)
-
             com = "ln -s  %s/phylophlan_databases ." % phylophlan_path
             os.system(com)
 
