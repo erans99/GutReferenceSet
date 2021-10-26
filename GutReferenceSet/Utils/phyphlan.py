@@ -23,6 +23,9 @@ if __name__ == '__main__':
             com = "ln -s  %s/phylophlan_databases ." % phylophlan_path
             os.system(com)
 
+            com = "ln -s  %s/phylophlan_databases ." % phylophlan_path
+            os.system(com)
+
             assert os.path.exists(singles_dir), \
                 "Single fasta directory doesn't exist"
             com = "%s/phylophlan_metagenomic -i %s -o output --nproc %d -n 1 -d SGB.Jan19 --verbose" % \

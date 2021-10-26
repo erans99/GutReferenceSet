@@ -1,7 +1,7 @@
 import os
 from GutReferenceSet.Build_Species_Set.config import build_dir
 
-checkm = "XXXX"  # checkm executable
+checkm = "XXXX"  # path of checkm executable
 prodigal = "XXXX"  # path of prodigal executable
 hmmer = "XXXX"  # path of hmmer executable
 pplacer = "XXXX"  # path of pplacer executable

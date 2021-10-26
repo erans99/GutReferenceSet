@@ -1,8 +1,6 @@
 import os
 import numpy
 
-build_dir = "XXXX" # work directory, in it should already exist full_metadata.csv
-
 Min_Completeness = 70
 Max_Contamination = 5
 
@@ -14,6 +12,7 @@ quality_score_col = f'Score_{Coef_Completeness}_{Coef_Contamination}_{Coef_log_N
 
 species_level_mash_distance = 0.05
 
+build_dir = "XXXX" # work directory, in it should already exist full_metadata.csv
 quality_dir = os.path.join(build_dir, "quality")
 dists_dir = os.path.join(build_dir, "dists")
 cluster_dir = os.path.join(dists_dir, "between_person")
