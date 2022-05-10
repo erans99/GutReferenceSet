@@ -105,8 +105,9 @@ def mash_from_best(person_df):
 def filter_by_person(df):
     multiple_genomes = df[person_defining_cols].duplicated(keep=False)
 
-    df.loc[multiple_genomes] = df.loc[multiple_genomes].groupby(person_defining_cols).apply(mash_from_best)\
-        .droplevel(person_defining_cols)
+    if multiple_genomes.any():
+        df.loc[multiple_genomes] = df.loc[multiple_genomes].groupby(person_defining_cols).apply(mash_from_best)\
+            .droplevel(person_defining_cols)
 
     return df
 
