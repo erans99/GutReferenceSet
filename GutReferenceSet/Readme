@@ -4,7 +4,7 @@ Creating a new reference set:
    A file named full_metadata.csv with index witch is the full path of an assembled genome fasta file
    and at least the following columns:
    Source, Method, AssemblyName, SampleName, RegistrationCode, DoNotTake
-   Where:
+   Where:?
    Source - source of data, so that Source + RegistrationCode is a unique identifier of an individual from which
             assemblies where created
    Method - assembly creation method (MAG / isolate / nanopore...)
