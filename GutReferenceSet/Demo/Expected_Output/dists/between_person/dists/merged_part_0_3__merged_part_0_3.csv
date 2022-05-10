@@ -1,0 +1,4 @@
+#query	GutReferenceSet/GutReferenceSet/Demo/ASM_19476_0_MAG_4.fa	GutReferenceSet/GutReferenceSet/Demo/ASM_25755_0_MAG_4.fa	GutReferenceSet/GutReferenceSet/Demo/ASM_23511_0_MAG_0.fa
+GutReferenceSet/GutReferenceSet/Demo/ASM_19476_0_MAG_4.fa	0	0.0155619	0.180176
+GutReferenceSet/GutReferenceSet/Demo/ASM_25755_0_MAG_4.fa	0.0155619	0	0.176252
+GutReferenceSet/GutReferenceSet/Demo/ASM_23511_0_MAG_0.fa	0.180176	0.176252	0

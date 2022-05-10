@@ -1,0 +1,3 @@
+#input_bin,[u|k]_[S|G|F]GBid,taxa_level,taxonomy,avg_dist,num_SGB,is_human,is_SGB_dist,num_rep
+Rep_1,uSGB_17364,Other,k__Bacteria|p__Proteobacteria|c__CFGB3176|o__OFGB3176|f__FGB3176|g__GGB10708|s__GGB10708_SGB17364|t__SGB17364,0.2939550303030303,17364,True,False,1
+Rep_2,uSGB_17364,Other,k__Bacteria|p__Proteobacteria|c__CFGB3176|o__OFGB3176|f__FGB3176|g__GGB10708|s__GGB10708_SGB17364|t__SGB17364,0.30737990909090906,17364,True,False,2
