@@ -6,6 +6,8 @@ import numpy
 from GutReferenceSet.Utils.config import phy_path, phy_names, python_exe_dir, mash_exe, Segata_desc, \
     phylophlan_path
 from GutReferenceSet.Build_Species_Set.config import singles_dir
+from GutReferenceSet.Build_Species_Set import config
+
 
 NUM_TH = 50
 CREATE_TREE = True
@@ -16,6 +18,12 @@ if __name__ == '__main__':
     os.makedirs(phy_path, exist_ok=True)
     os.chdir(phy_path)
 
+    if not os.path.exists(singles_dir):
+        os.makedirs(singles_dir)
+        reps = pandas.read_csv(config.reps_file, index_col=0)
+        for i in reps.index:
+            os.system("cp %s %s/Rep_%d.fa" % (i, singles_dir, reps.loc[i].cluster_s))
+
     if PHYPHLAM_NAME and (not os.path.exists(phy_names)):
         if not os.path.exists(os.path.join(phy_path, "output.tsv")):
             os.environ["PATH"] += os.pathsep + os.path.dirname(mash_exe)
@@ -23,8 +31,6 @@ if __name__ == '__main__':
             com = "ln -s  %s/phylophlan_databases ." % phylophlan_path
             os.system(com)
 
-            assert os.path.exists(singles_dir), \
-                "Single fasta directory doesn't exist"
             com = "%s/phylophlan_metagenomic -i %s -o output --nproc %d -n 1 -d SGB.Jan19 --verbose" % \
                   (python_exe_dir, singles_dir, NUM_TH)
             os.system(com)
