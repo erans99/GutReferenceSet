@@ -9,6 +9,8 @@ GutReferenceSet/Build_Species_Set/config.py
 
 if trying the Demo - correct the index of GutReferenceSet/Demo/full_metadata.csv to the full path of your system
 
+Run and tested on:
+python 3.7.4 on CentOS Linux 7.9
 
 Creating a new reference set:
 
