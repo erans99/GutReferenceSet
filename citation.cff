@@ -1,0 +1,13 @@
+cff-version: 1.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Peled-Leviatan
+    given-names: Sigal
+    orcid: https://orcid.org/0000-0003-2675-3257
+  - family-names: Shoer
+    given-names: Saar
+    orcid: https://orcid.org/0000-0003-0883-1434
+
+title: "Code for creating a Gut Referense Set"
+version: 1.0
+date-released: 2022-06-14
